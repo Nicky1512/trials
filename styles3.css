@@ -76,7 +76,6 @@ header{
 }
 
 .section-two {
-  border: palevioletred 2px solid;
   display: inline-block;
 }
 .section-two h1{
@@ -90,7 +89,6 @@ header{
   display: inline-flex;
 }
 .article-data{
-  border: green 1px solid;
   color: #333;
 }
 .article-data h2{

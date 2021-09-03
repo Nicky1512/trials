@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi&family=Kaisei+Tokumin:wght@700&family=Montserrat:wght@100&display=swap');
+/* font-family: 'Kaisei HarunoUmi', serif;
+font-family: 'Kaisei Tokumin', serif;
+font-family: 'Montserrat', sans-serif; */
+
+*{ margin: 0; padding: 0;}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  width: 100%;
+}
+
+header{
+  background-color: #333;;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.header-ppl{
+  display: flex;
+  align-items: center;
+}
+.header-ppl img{
+  margin: 0.3em;
+  height: 100px;
+  width: 100px;
+}
+.header-ppl h1{
+  margin: 0 0 0 0.5em;
+  padding: 0.4em;
+}
+
+.header-menu{
+  text-align: right;
+  align-content: center;
+  margin: 0 1.5em;
+  
+}
+
+.header-menu ul li{
+  display: inline-flex;
+  margin: 0.1rem;
+}
+
+.nav-a{
+  text-decoration: none;
+  color: #fff;
+  margin: 0.5em 1em;
+  padding: 0 0.15em 0.15em 0;
+  position: relative;
+}
+.nav-a:hover{
+  color: rgb(61, 144, 238);
+}
+.nav-a::after{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: rgb(61, 144, 238);
+  transform: scaleX(0);
+  transition: 0.7s transform cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.nav-a:hover::after, .active {
+  color: rgb(61, 144, 238);
+  transform: scaleX(1);
+}
+.section-one{
+  height: 400px;
+  background-image: url(https://png.pngtree.com/background/20210709/original/pngtree-white-technology-background-picture-image_352325.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.section-two {
+  border: palevioletred 2px solid;
+  display: inline-block;
+}
+.section-two h1{
+  font-size: 30px;
+  font-family: 'Kaisei HarunoUmi', serif;
+  padding: 0.2em;
+  margin: 0.5em;
+
+}
+.section-two div{
+  display: inline-flex;
+}
+.article-data{
+  border: green 1px solid;
+  color: #333;
+}
+.article-data h2{
+  font-size: 15px;
+}
+.article-data p{
+  text-align: justify;
+}

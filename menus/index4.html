@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/menus/styles4.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Responsive DropDownMenu</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".hamburger-btn .fa-times").hide();
+            $(".hamburger-btn .fa-bars").click(function () {
+                $(this).hide();
+                $(".hamburger-btn .fa-times").show();
+                $(".mob ul li").addClass("active");
+            });
+            $(".hamburger-btn .fa-times").click(function () {
+                $(this).hide();
+                $(".hamburger-btn .fa-bars").show();
+                $(".mob ul li").removeClass("active");
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="desk">
+            <ul>
+                <li class="active"><a href="#">home</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">maps</a></li>
+                <li><a href="#">blog</a></li>
+                <li><a href="#">contact us</a></li>
+            </ul>
+        </nav>
+
+        <nav class="mob">
+            <div class="hamburger-btn">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </div>
+            <ul>
+                <li class="active"><a href="#">home</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">maps</a></li>
+                <li><a href="#">blog</a></li>
+                <li><a href="#">contact us</a></li>
+            </ul>
+        </nav>
+
+        <di class="header"></di>
+
+    </div>
+</body>
+
+</html>

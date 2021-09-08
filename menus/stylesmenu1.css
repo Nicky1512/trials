@@ -1,0 +1,43 @@
+.container{
+    padding: 25px;
+}
+
+.active{
+    background-color: #FF5733;
+}
+
+/* HORIZONTAL-BAR */
+.icon-bar-horizontal{
+    width: 100%;
+    background: #555;
+    overflow: auto;
+}
+.icon-bar-horizontal a{
+    float: left;
+    text-align: center;
+    width: 12.5%;
+    color: #fff;
+    font-size: 36px;
+    padding: 12px 0;
+    transition: all 0.3 ease;
+}
+.icon-bar-horizontal a:hover{
+    background-color: #000;
+}
+
+/* VERTICAL-BAR */
+.icon-bar-vertical{
+    width: 100px;
+    background: #555;
+}
+.icon-bar-vertical a{
+    display: block;
+    text-align: center;
+    color: #fff;
+    font-size: 36px;
+    padding: 20px;
+    transition: all 0.3 ease;
+}
+.icon-bar-vertical a:hover{
+    background-color: #000;
+}
